@@ -48,3 +48,11 @@ print(f"Average Turnaround Time: {avg_turnaround_time:.2f}")
 # Output the waiting time and turnaround time for each process
 for process in processes:
     print(f"Process {process.pid}: Waiting Time = {process.waiting_time}, Turnaround Time = {process.turnaround_time}")
+
+
+'''
+Explanation waiting time and turn-around time
+
+Waiting Time refers to the total amount of time a process spends in the ready queue waiting to get CPU time. It's the period during which a process is ready to run but not actually being executed by the CPU
+Turnaround Time is the total amount of time taken to execute a particular process, from the time of submission to the time of completion. This includes all the time periods that the process spends waiting in the ready queue, executing on the CPU, and doing I/O operations.
+
